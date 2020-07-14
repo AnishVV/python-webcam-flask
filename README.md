@@ -13,21 +13,10 @@ In the demo site, the server is simply flipping the image horizontally. You coul
 
 ### Setup
 
-#### Optional
-
-- setup heroku (`brew install heroku`)
+- setup heroku (`brew tap heroku/brew && brew install heroku`)
 - Use a python virtualenv
-
-#### Required
-- `git clone https://github.com/dxue2012/python-webcam-flask.git`
 - `pip install -r requirements.txt`
-
-### Run locally
-
-IF YOU HAVE HEROKU:
 - `heroku local`
-IF NOT:
-- `gunicorn -k eventlet -w 1 app:app --log-file=-`
 
 - in your browser, navigate to localhost:5000
 

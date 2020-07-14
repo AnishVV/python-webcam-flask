@@ -42,3 +42,20 @@ $(document).ready(function(){
   });
 });
 
+
+// ////////////////////////
+
+function getDetection(){
+  var settings = {
+    "url": "/detection_feed",
+    "method": "GET",
+    "timeout": 0,
+  };
+  
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+  });
+  setTimeout(getDetection, 1000);
+}
+
+getDetection();
