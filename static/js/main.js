@@ -43,7 +43,11 @@ $(document).ready(function(){
 });
 
 
-// ////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Call the ML detection route to get the results
+// This code sets up a loop so that it calls the /detection_feed endpoint
+// every 1000 ms (e.g. 1 second) 
+///////////////////////////////////////////////////////////////////////////
 
 function getDetection(){
   var settings = {
